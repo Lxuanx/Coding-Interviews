@@ -30,13 +30,13 @@ public class Demo24 {
 
 	}
 
-	private static ArrayList<ArrayList<Integer>> pathList = new ArrayList<ArrayList<Integer>>();
-	private static ArrayList<Integer> al = new ArrayList<Integer>();
+	public static ArrayList<ArrayList<Integer>> pathList = new ArrayList<ArrayList<Integer>>();
+	public static ArrayList<Integer> al = new ArrayList<Integer>();
 
 	public static ArrayList<ArrayList<Integer>> FindPath(TreeNode root,
 			int target) {
 		if (root == null) {
-			return null;
+			return pathList;
 		}
 		target -= root.val;
 		al.add(root.val);
